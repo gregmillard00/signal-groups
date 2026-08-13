@@ -1,0 +1,52 @@
+{
+ "clip_id": "notld_3600",
+ "source": "notld",
+ "title": "Night of the Living Dead",
+ "year": 1968,
+ "start": 3600.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.247,
+  "voiced": 0.588,
+  "score": 5.92
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 1.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact and actively responds to the situation, demonstrating clear engagement. Her speech is rapid and her voice sounds tense and slightly shaky as she asks a desperate question about escaping. Additionally, her furrowed brows and tense facial expression further emphasize her anxiety and stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "neutral",
+    "start": 5.0,
+    "end": 10.0
+   },
+   {
+    "state": "engaged",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

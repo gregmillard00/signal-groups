@@ -1,0 +1,42 @@
+{
+ "clip_id": "carnival_1350",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 1350.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.473,
+  "voiced": 0.338,
+  "score": 5.6
+ },
+ "cluster": "hesitation_uncertainty",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 4.5,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact and actively participates in the conversation, demonstrating she is fully engaged. Her uncertainty is clearly signaled through verbal statements like \"I'm not sure\" and \"I don't know,\" which are accompanied by a slight shoulder shrug. Additionally, her gaze shifts away and her eyebrows raise slightly while she speaks, further emphasizing her lack of commitment to her answer.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

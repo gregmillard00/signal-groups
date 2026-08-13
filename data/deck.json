@@ -1,0 +1,907 @@
+{
+ "provisional": false,
+ "notice": null,
+ "clusters": [
+  {
+   "id": "agreement_interest",
+   "name": "Agreement & Interest",
+   "signals": [
+    "agreement",
+    "interest"
+   ],
+   "blurb": "Leaning in. Alignment with the other person, or genuine curiosity about what they are saying.",
+   "color": "#28c840",
+   "tint": "#dff7e3"
+  },
+  {
+   "id": "confidence",
+   "name": "Confidence",
+   "signals": [
+    "confidence"
+   ],
+   "blurb": "Saying it straight. Clear conviction, no hedging, no qualifiers.",
+   "color": "#ffbb33",
+   "tint": "#fff1d6"
+  },
+  {
+   "id": "hesitation_uncertainty",
+   "name": "Hesitation & Uncertainty",
+   "signals": [
+    "hesitation",
+    "uncertainty"
+   ],
+   "blurb": "Not committing. Stalling before an answer, or low confidence in one's own judgment.",
+   "color": "#2f96e0",
+   "tint": "#ddeefb"
+  },
+  {
+   "id": "frustration_disagreement",
+   "name": "Frustration & Disagreement",
+   "signals": [
+    "frustration",
+    "disagreement"
+   ],
+   "blurb": "Pushing back. Blocked progress, or active divergence from what was just said.",
+   "color": "#ff5f57",
+   "tint": "#ffe3e1"
+  },
+  {
+   "id": "skepticism_stress_confusion",
+   "name": "Skepticism, Stress & Confusion",
+   "signals": [
+    "skepticism",
+    "stress",
+    "confusion"
+   ],
+   "blurb": "Something is not landing. Doubt about a claim, pressure in the moment, or a gap in understanding.",
+   "color": "#e84393",
+   "tint": "#fce5f1"
+  }
+ ],
+ "boards": [
+  {
+   "id": "board-1",
+   "groups": [
+    {
+     "cluster": "confidence",
+     "name": "Confidence",
+     "blurb": "Saying it straight. Clear conviction, no hedging, no qualifiers.",
+     "color": "#ffbb33",
+     "tint": "#fff1d6",
+     "signals": [
+      "confidence"
+     ],
+     "clips": [
+      {
+       "id": "notld_2500",
+       "video": "clips/notld_2500.mp4",
+       "poster": "clips/notld_2500.jpg",
+       "title": "Night of the Living Dead",
+       "year": 1968,
+       "credit": "Night of the Living Dead (1968) - public domain, via archive.org",
+       "at": 2500.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his message. His voice is clear and steady, and he speaks fluently without any filler words or hesitation.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "beatdevil_4520",
+       "video": "clips/beatdevil_4520.mp4",
+       "poster": "clips/beatdevil_4520.jpg",
+       "title": "Beat the Devil",
+       "year": 1953,
+       "credit": "Beat the Devil (1953) - public domain, via archive.org",
+       "at": 4520.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture throughout the clip. His voice is clear and steady, and he delivers his message fluently without any filler words or hesitation.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "beatdevil_5120",
+       "video": "clips/beatdevil_5120.mp4",
+       "poster": "clips/beatdevil_5120.jpg",
+       "title": "Beat the Devil",
+       "year": 1953,
+       "credit": "Beat the Devil (1953) - public domain, via archive.org",
+       "at": 5120.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his statement. His voice is clear and steady, and he speaks fluently without any filler words or hesitation.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 0
+    },
+    {
+     "cluster": "agreement_interest",
+     "name": "Agreement & Interest",
+     "blurb": "Leaning in. Alignment with the other person, or genuine curiosity about what they are saying.",
+     "color": "#28c840",
+     "tint": "#dff7e3",
+     "signals": [
+      "agreement",
+      "interest"
+     ],
+     "clips": [
+      {
+       "id": "groucho2_115",
+       "video": "clips/groucho2_115.mp4",
+       "poster": "clips/groucho2_115.jpg",
+       "title": "You Bet Your Life",
+       "year": 1959,
+       "credit": "You Bet Your Life (1959) - public domain, via archive.org",
+       "at": 115.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "interest",
+         "probability": "high",
+         "rationale": "The speaker's eyes widen and his eyebrows raise slightly as he listens to the other person's response. He also maintains steady eye contact and a focused expression, demonstrating active attention to the conversation.",
+         "start": 0.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "carnival_3550",
+       "video": "clips/carnival_3550.mp4",
+       "poster": "clips/carnival_3550.jpg",
+       "title": "Carnival of Souls",
+       "year": 1962,
+       "credit": "Carnival of Souls (1962) - public domain, via archive.org",
+       "at": 3550.0,
+       "margin": 2.0,
+       "signals": [
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The man exhibits clear signs of tension by bringing his hands up to cover his face and ears. He also swallows noticeably and looks down, indicating an effort to cope with or block out his surroundings.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "agreement",
+         "probability": "high",
+         "rationale": "The woman maintains direct eye contact and actively responds to the conversation, demonstrating clear engagement. She explicitly states her alignment by saying, \"I like being with you really, I do,\" which serves as a direct verbal confirmation. Additionally, her warm smile and slight head nod further emphasize her assent and positive stance.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "groucho2_1190",
+       "video": "clips/groucho2_1190.mp4",
+       "poster": "clips/groucho2_1190.jpg",
+       "title": "You Bet Your Life",
+       "year": 1959,
+       "credit": "You Bet Your Life (1959) - public domain, via archive.org",
+       "at": 1190.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "agreement",
+         "probability": "high",
+         "rationale": "The speaker begins his response with a clear 'Yeah' and a slight nod, indicating assent to the previous point.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "hesitation",
+         "probability": "high",
+         "rationale": "The speaker pauses mid-sentence after saying 'Yeah,' uses the filler word 'uh,' and briefly looks down before completing his thought.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 1
+    },
+    {
+     "cluster": "frustration_disagreement",
+     "name": "Frustration & Disagreement",
+     "blurb": "Pushing back. Blocked progress, or active divergence from what was just said.",
+     "color": "#ff5f57",
+     "tint": "#ffe3e1",
+     "signals": [
+      "frustration",
+      "disagreement"
+     ],
+     "clips": [
+      {
+       "id": "stranger_3400",
+       "video": "clips/stranger_3400.mp4",
+       "poster": "clips/stranger_3400.jpg",
+       "title": "The Stranger",
+       "year": 1946,
+       "credit": "The Stranger (1946) - public domain, via archive.org",
+       "at": 3400.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "disagreement",
+         "probability": "high",
+         "rationale": "The woman explicitly rejects the interviewer's statement by saying 'No, no' and 'I've never seen him here in Harper.' She also shakes her head slightly while delivering her response.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        },
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The woman's speech is broken up with repetitions like 'I, I' and 'No, no,' indicating tension. Additionally, her eyes dart nervously and she looks down while speaking, suggesting anxiety.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "doa_3400",
+       "video": "clips/doa_3400.mp4",
+       "poster": "clips/doa_3400.jpg",
+       "title": "D.O.A.",
+       "year": 1950,
+       "credit": "D.O.A. (1950) - public domain, via archive.org",
+       "at": 3400.0,
+       "margin": 1.27,
+       "signals": [
+        {
+         "type": "disagreement",
+         "probability": "high",
+         "rationale": "The speaker explicitly states 'No, I never heard of him,' directly contradicting the other person's premise. This verbal rejection is accompanied by a slight head shake.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "frustration",
+         "probability": "low",
+         "rationale": "The speaker's tone is sharp and slightly exasperated as he denies knowing the person. He also looks away and presses his lips together while listening to the additional information.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "stress",
+         "probability": "medium",
+         "rationale": "The speaker's speech is broken up by a pause and a filler word ('No, I... I never heard of him'). He also looks down and fidgets with his hands while holding a hat.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The speaker shifts his gaze away and pauses before answering, indicating a moment of searching for the right response. His brows furrow slightly during this brief delay.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "dragnet_810",
+       "video": "clips/dragnet_810.mp4",
+       "poster": "clips/dragnet_810.jpg",
+       "title": "Dragnet: The Big False Make",
+       "year": 1954,
+       "credit": "Dragnet: The Big False Make (1954) - public domain, via archive.org",
+       "at": 810.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "frustration",
+         "probability": "high",
+         "rationale": "The speaker maintains direct eye contact and speaks clearly, demonstrating active engagement with the listener. His frustration is evident through his verbal complaint about being \"sick of it\" and his sharp, elevated tone of voice. Additionally, his wide eyes and tense facial expression further emphasize his annoyance with the situation.",
+         "start": 0.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "board-2",
+   "groups": [
+    {
+     "cluster": "skepticism_stress_confusion",
+     "name": "Skepticism, Stress & Confusion",
+     "blurb": "Something is not landing. Doubt about a claim, pressure in the moment, or a gap in understanding.",
+     "color": "#e84393",
+     "tint": "#fce5f1",
+     "signals": [
+      "skepticism",
+      "stress",
+      "confusion"
+     ],
+     "clips": [
+      {
+       "id": "notld_975",
+       "video": "clips/notld_975.mp4",
+       "poster": "clips/notld_975.jpg",
+       "title": "Night of the Living Dead",
+       "year": 1968,
+       "credit": "Night of the Living Dead (1968) - public domain, via archive.org",
+       "at": 975.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The man's wide eyes, tense facial expression, and quick, darting gaze indicate a state of high anxiety. He also swallows noticeably and speaks with a slightly strained, rapid tone, further demonstrating his tension and efforts to maintain composure.",
+         "start": 0.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "notld_3600",
+       "video": "clips/notld_3600.mp4",
+       "poster": "clips/notld_3600.jpg",
+       "title": "Night of the Living Dead",
+       "year": 1968,
+       "credit": "Night of the Living Dead (1968) - public domain, via archive.org",
+       "at": 3600.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The woman maintains direct eye contact and actively responds to the situation, demonstrating clear engagement. Her speech is rapid and her voice sounds tense and slightly shaky as she asks a desperate question about escaping. Additionally, her furrowed brows and tense facial expression further emphasize her anxiety and stress.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "carnival_3725",
+       "video": "clips/carnival_3725.mp4",
+       "poster": "clips/carnival_3725.jpg",
+       "title": "Carnival of Souls",
+       "year": 1962,
+       "credit": "Carnival of Souls (1962) - public domain, via archive.org",
+       "at": 3725.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The woman maintains direct eye contact with the camera and actively responds to the man's statement, demonstrating clear engagement. Her speech is broken and filled with anxious repetitions like \"I'll have to be left alone,\" which are strong verbal indicators of stress. Additionally, her nonverbal cues, including crying, furrowed brows, and frantically touching her neck and hair, further emphasize her high level of tension and anxiety.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 0
+    },
+    {
+     "cluster": "hesitation_uncertainty",
+     "name": "Hesitation & Uncertainty",
+     "blurb": "Not committing. Stalling before an answer, or low confidence in one's own judgment.",
+     "color": "#2f96e0",
+     "tint": "#ddeefb",
+     "signals": [
+      "hesitation",
+      "uncertainty"
+     ],
+     "clips": [
+      {
+       "id": "carnival_1350",
+       "video": "clips/carnival_1350.mp4",
+       "poster": "clips/carnival_1350.jpg",
+       "title": "Carnival of Souls",
+       "year": 1962,
+       "credit": "Carnival of Souls (1962) - public domain, via archive.org",
+       "at": 1350.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The woman maintains direct eye contact and actively participates in the conversation, demonstrating she is fully engaged. Her uncertainty is clearly signaled through verbal statements like \"I'm not sure\" and \"I don't know,\" which are accompanied by a slight shoulder shrug. Additionally, her gaze shifts away and her eyebrows raise slightly while she speaks, further emphasizing her lack of commitment to her answer.",
+         "start": 0.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "dragnet_1010",
+       "video": "clips/dragnet_1010.mp4",
+       "poster": "clips/dragnet_1010.jpg",
+       "title": "Dragnet: The Big False Make",
+       "year": 1954,
+       "credit": "Dragnet: The Big False Make (1954) - public domain, via archive.org",
+       "at": 1010.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "hesitation",
+         "probability": "high",
+         "rationale": "The woman explicitly states, \"Well, I'll have to think about that,\" directly indicating a delay in her response. This verbal cue is accompanied by her looking upward and away while speaking, further demonstrating hesitation. Her overall attentive posture and direct response to the question show she remains engaged in the interaction.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The speaker explicitly states, \"I'll have to think about that,\" and \"Let's see,\" demonstrating a clear lack of commitment to her answer. This verbal hesitation is accompanied by nonverbal cues such as looking upward and away while speaking, and furrowing her brows. Despite this uncertainty, she remains engaged in the interaction by continuing to respond and maintain eye contact with the listener.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "doa_475",
+       "video": "clips/doa_475.mp4",
+       "poster": "clips/doa_475.jpg",
+       "title": "D.O.A.",
+       "year": 1950,
+       "credit": "D.O.A. (1950) - public domain, via archive.org",
+       "at": 475.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The speaker begins her statement with the word \"Maybe,\" explicitly signaling a lack of full commitment to her suggestion. This verbal cue is accompanied by nonverbal behaviors such as looking away and down, and a soft, hesitant tone of voice, all of which strongly support the label of uncertainty.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture while delivering her message. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 1
+    },
+    {
+     "cluster": "agreement_interest",
+     "name": "Agreement & Interest",
+     "blurb": "Leaning in. Alignment with the other person, or genuine curiosity about what they are saying.",
+     "color": "#28c840",
+     "tint": "#dff7e3",
+     "signals": [
+      "agreement",
+      "interest"
+     ],
+     "clips": [
+      {
+       "id": "groucho1_915",
+       "video": "clips/groucho1_915.mp4",
+       "poster": "clips/groucho1_915.jpg",
+       "title": "You Bet Your Life",
+       "year": 1960,
+       "credit": "You Bet Your Life (1960) - public domain, via archive.org",
+       "at": 915.0,
+       "margin": 1.6,
+       "signals": [
+        {
+         "type": "agreement",
+         "probability": "high",
+         "rationale": "The speaker nods her head affirmatively while stating the amount of money sent, indicating assent with the information being presented.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        },
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact with the camera and delivers the information with a clear, steady voice, avoiding any hedging language.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        },
+        {
+         "type": "interest",
+         "probability": "medium",
+         "rationale": "The speaker's eyes widen and her eyebrows raise slightly as she discusses the topic, showing focused attention on the subject matter.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "beatdevil_1580",
+       "video": "clips/beatdevil_1580.mp4",
+       "poster": "clips/beatdevil_1580.jpg",
+       "title": "Beat the Devil",
+       "year": 1953,
+       "credit": "Beat the Devil (1953) - public domain, via archive.org",
+       "at": 1580.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "interest",
+         "probability": "high",
+         "rationale": "The speaker's eyes widen and her eyebrows raise as she discusses the topic. She also smiles warmly and maintains focused eye contact, demonstrating active attention and engagement with the conversation.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "groucho1_515",
+       "video": "clips/groucho1_515.mp4",
+       "poster": "clips/groucho1_515.jpg",
+       "title": "You Bet Your Life",
+       "year": 1960,
+       "credit": "You Bet Your Life (1960) - public domain, via archive.org",
+       "at": 515.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "agreement",
+         "probability": "high",
+         "rationale": "The speaker nods his head affirmatively and smiles warmly while confirming the other person's statement.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        },
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his response clearly and fluently without any filler words.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 2
+    }
+   ]
+  },
+  {
+   "id": "board-3",
+   "groups": [
+    {
+     "cluster": "confidence",
+     "name": "Confidence",
+     "blurb": "Saying it straight. Clear conviction, no hedging, no qualifiers.",
+     "color": "#ffbb33",
+     "tint": "#fff1d6",
+     "signals": [
+      "confidence"
+     ],
+     "clips": [
+      {
+       "id": "carnival_1275",
+       "video": "clips/carnival_1275.mp4",
+       "poster": "clips/carnival_1275.jpg",
+       "title": "Carnival of Souls",
+       "year": 1962,
+       "credit": "Carnival of Souls (1962) - public domain, via archive.org",
+       "at": 1275.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The woman maintains steady eye contact and an upright posture while speaking. Her voice is clear and steady, and she delivers her response fluently without any filler words or hesitation.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "johndoe_650",
+       "video": "clips/johndoe_650.mp4",
+       "poster": "clips/johndoe_650.jpg",
+       "title": "Meet John Doe",
+       "year": 1941,
+       "credit": "Meet John Doe (1941) - public domain, via archive.org",
+       "at": 650.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture while delivering her message. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "doa_3950",
+       "video": "clips/doa_3950.mp4",
+       "poster": "clips/doa_3950.jpg",
+       "title": "D.O.A.",
+       "year": 1950,
+       "credit": "D.O.A. (1950) - public domain, via archive.org",
+       "at": 3950.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "confidence",
+         "probability": "high",
+         "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his message. His voice is clear and steady, and he speaks fluently without any filler words or hesitation.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 0
+    },
+    {
+     "cluster": "agreement_interest",
+     "name": "Agreement & Interest",
+     "blurb": "Leaning in. Alignment with the other person, or genuine curiosity about what they are saying.",
+     "color": "#28c840",
+     "tint": "#dff7e3",
+     "signals": [
+      "agreement",
+      "interest"
+     ],
+     "clips": [
+      {
+       "id": "carnival_3800",
+       "video": "clips/carnival_3800.mp4",
+       "poster": "clips/carnival_3800.jpg",
+       "title": "Carnival of Souls",
+       "year": 1962,
+       "credit": "Carnival of Souls (1962) - public domain, via archive.org",
+       "at": 3800.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "interest",
+         "probability": "high",
+         "rationale": "The woman's eyes widen and her eyebrows raise as she listens to the man's question. She then asks a direct follow-up question, \"What she' been up to?\", demonstrating her active attention and desire for more information.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The woman maintains direct eye contact with the off-camera speaker, demonstrating active engagement in the conversation. Her speech is broken up with filler words like 'uh' and 'um,' and her voice sounds slightly shaky, indicating tension. Additionally, she looks upward and away while speaking, which are nonverbal and prosodic cues commonly associated with stress.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "carnival_2150",
+       "video": "clips/carnival_2150.mp4",
+       "poster": "clips/carnival_2150.jpg",
+       "title": "Carnival of Souls",
+       "year": 1962,
+       "credit": "Carnival of Souls (1962) - public domain, via archive.org",
+       "at": 2150.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "interest",
+         "probability": "high",
+         "rationale": "The woman leans slightly forward and maintains focused eye contact with the speaker. Her eyebrows raise and her eyes widen as she listens attentively, demonstrating active engagement with the conversation.",
+         "start": 10.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "hillbillies_110",
+       "video": "clips/hillbillies_110.mp4",
+       "poster": "clips/hillbillies_110.jpg",
+       "title": "The Beverly Hillbillies: The Great Feud",
+       "year": 1963,
+       "credit": "The Beverly Hillbillies: The Great Feud (1963) - public domain, via archive.org",
+       "at": 110.0,
+       "margin": null,
+       "signals": [
+        {
+         "type": "interest",
+         "probability": "high",
+         "rationale": "The man maintains steady eye contact with the speaker and his eyes widen with focused attention. He also nods slightly and keeps his lips parted, demonstrating active engagement with the conversation.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 1
+    },
+    {
+     "cluster": "hesitation_uncertainty",
+     "name": "Hesitation & Uncertainty",
+     "blurb": "Not committing. Stalling before an answer, or low confidence in one's own judgment.",
+     "color": "#2f96e0",
+     "tint": "#ddeefb",
+     "signals": [
+      "hesitation",
+      "uncertainty"
+     ],
+     "clips": [
+      {
+       "id": "dragnet_1285",
+       "video": "clips/dragnet_1285.mp4",
+       "poster": "clips/dragnet_1285.jpg",
+       "title": "Dragnet: The Big False Make",
+       "year": 1954,
+       "credit": "Dragnet: The Big False Make (1954) - public domain, via archive.org",
+       "at": 1285.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The speaker explicitly states \"I don't know\" and \"Sure they would,\" directly indicating a lack of certainty. This verbal response is accompanied by a downward gaze and a slight pause before answering, further reinforcing his self-doubt.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The speaker's speech is broken up with pauses and filler words like 'uh' and 'um'. He also blinks frequently and looks down while speaking, indicating tension.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "stranger_1300",
+       "video": "clips/stranger_1300.mp4",
+       "poster": "clips/stranger_1300.jpg",
+       "title": "The Stranger",
+       "year": 1946,
+       "credit": "The Stranger (1946) - public domain, via archive.org",
+       "at": 1300.0,
+       "margin": 1.0,
+       "signals": [
+        {
+         "type": "confusion",
+         "probability": "high",
+         "rationale": "The man furrows his brows and blinks while processing the question. He then stammers and looks down, indicating a momentary breakdown in understanding.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "hesitation",
+         "probability": "high",
+         "rationale": "The man delays his response to the question by starting with the filler word 'uh' and restarting his phrase. He also looks down and away before attempting to speak.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The man exhibits physical signs of tension by blinking rapidly and swallowing. His speech is broken up with filler words and false starts, suggesting underlying anxiety.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        },
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The man's brows furrow and he shifts his gaze downward before answering. He fills the gap with 'uh' and stammers, showing he is not immediately sure of his response.",
+         "start": 0.0,
+         "end": 5.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      },
+      {
+       "id": "dragnet_160",
+       "video": "clips/dragnet_160.mp4",
+       "poster": "clips/dragnet_160.jpg",
+       "title": "Dragnet: The Big False Make",
+       "year": 1954,
+       "credit": "Dragnet: The Big False Make (1954) - public domain, via archive.org",
+       "at": 160.0,
+       "margin": 1.5,
+       "signals": [
+        {
+         "type": "stress",
+         "probability": "high",
+         "rationale": "The speaker exhibits nonverbal signs of tension, including a visible swallow and a slight puffing of the cheeks. Additionally, his speech is broken up with a pause and the filler word 'uh' before completing his sentence.",
+         "start": 0.0,
+         "end": 10.0,
+         "modality": []
+        },
+        {
+         "type": "uncertainty",
+         "probability": "high",
+         "rationale": "The man explicitly uses the word 'maybe' to express doubt about his next action. This verbal hesitation is accompanied by nonverbal cues such as shifting his gaze away and furrowing his brows, indicating a lack of commitment to his statement.",
+         "start": 5.0,
+         "end": 10.0,
+         "modality": []
+        }
+       ],
+       "label_source": "inter1"
+      }
+     ],
+     "difficulty": 2
+    }
+   ]
+  }
+ ],
+ "clip_count": 27
+}

@@ -1,0 +1,47 @@
+{
+ "clip_id": "beatdevil_4940",
+ "source": "beatdevil",
+ "title": "Beat the Devil",
+ "year": 1953,
+ "start": 4940.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.667,
+  "face_size": 0.536,
+  "voiced": 0.302,
+  "score": 4.68
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man's eyes widen dramatically and his mouth drops open in a look of extreme shock and anxiety. He also nervously fidgets with his tie and stammers his words, asking \"Will he take the check?\" These clear verbal and nonverbal indicators of tension and fear strongly support the label of stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "neutral",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

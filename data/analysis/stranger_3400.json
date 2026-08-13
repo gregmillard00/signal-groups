@@ -1,0 +1,50 @@
+{
+ "clip_id": "stranger_3400",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 3400.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.471,
+  "voiced": 0.517,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 3.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "disagreement",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman explicitly rejects the interviewer's statement by saying 'No, no' and 'I've never seen him here in Harper.' She also shakes her head slightly while delivering her response.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman's speech is broken up with repetitions like 'I, I' and 'No, no,' indicating tension. Additionally, her eyes dart nervously and she looks down while speaking, suggesting anxiety.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

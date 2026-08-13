@@ -1,0 +1,47 @@
+{
+ "clip_id": "notld_2875",
+ "source": "notld",
+ "title": "Night of the Living Dead",
+ "year": 1968,
+ "start": 2875.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.5,
+  "face_size": 0.38,
+  "voiced": 0.468,
+  "score": 5.1
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man exhibits physical signs of tension, including a furrowed brow, a tight jaw, and a quick, downward gaze. His brief, broken speech, consisting of only two words, further indicates underlying anxiety.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "neutral",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

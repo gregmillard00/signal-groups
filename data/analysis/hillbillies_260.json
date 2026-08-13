@@ -1,0 +1,33 @@
+{
+ "clip_id": "hillbillies_260",
+ "source": "hillbillies",
+ "title": "The Beverly Hillbillies: The Great Feud",
+ "year": 1963,
+ "start": 260.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.336,
+  "voiced": 0.605,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 0.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

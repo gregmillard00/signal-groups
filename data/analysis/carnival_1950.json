@@ -1,0 +1,63 @@
+{
+ "clip_id": "carnival_1950",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 1950.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.333,
+  "voiced": 0.537,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.15,
+ "scores": {
+  "agreement_interest": 2.6,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "low",
+    "rationale": "The speaker nods his head affirmatively while stating that he makes 'pretty good money though,' indicating assent with the implied premise.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his statement. His voice is clear and steady, and he uses definitive language without any hedges.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "medium",
+    "rationale": "The speaker's eyes widen and his eyebrows raise slightly as he mentions making 'pretty good money,' showing focused attention on the topic.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "neutral",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

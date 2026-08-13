@@ -1,0 +1,58 @@
+{
+ "clip_id": "groucho1_240",
+ "source": "groucho1",
+ "title": "You Bet Your Life",
+ "year": 1960,
+ "start": 240.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.433,
+  "voiced": 0.48,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.27,
+ "scores": {
+  "agreement_interest": 5.7,
+  "confidence": 4.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "low",
+    "rationale": "The speaker nods his head affirmatively while verbally confirming the interviewer's statement.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his response with a clear, steady voice.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The interviewer leans forward slightly and asks a direct follow-up question ('what's the whole name?') to gather more information. The speaker's eyes widen and his eyebrows raise slightly as he responds, showing focused attention.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

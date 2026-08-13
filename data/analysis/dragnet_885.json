@@ -1,0 +1,47 @@
+{
+ "clip_id": "dragnet_885",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 885.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.61,
+  "voiced": 0.507,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The person maintains direct eye contact with the camera, demonstrating active engagement with the interaction. His speech is broken up with filler words like \"uh\" and \"um,\" and his voice sounds slightly shaky, indicating tension. Additionally, he blinks frequently and his facial expression appears anxious, which are clear nonverbal and prosodic indicators of stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "neutral",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

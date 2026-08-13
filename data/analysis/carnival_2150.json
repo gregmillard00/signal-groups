@@ -1,0 +1,42 @@
+{
+ "clip_id": "carnival_2150",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 2150.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.514,
+  "voiced": 0.223,
+  "score": 4.987
+ },
+ "cluster": "agreement_interest",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 1.5,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "interest",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman leans slightly forward and maintains focused eye contact with the speaker. Her eyebrows raise and her eyes widen as she listens attentively, demonstrating active engagement with the conversation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

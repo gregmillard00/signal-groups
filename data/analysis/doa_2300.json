@@ -1,0 +1,50 @@
+{
+ "clip_id": "doa_2300",
+ "source": "doa",
+ "title": "D.O.A.",
+ "year": 1950,
+ "start": 2300.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.428,
+  "voiced": 0.485,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while speaking. His voice is clear and steady, and he delivers his instructions fluently without any filler words or hesitation.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man maintains direct eye contact and actively participates in the phone conversation, demonstrating clear engagement. His speech is rapid and broken up with phrases like \"I've got to hurry,\" indicating a sense of urgency. Additionally, his furrowed brows, tense facial expressions, and the shaky quality of his voice further emphasize his high level of stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

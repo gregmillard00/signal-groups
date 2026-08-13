@@ -1,0 +1,33 @@
+{
+ "clip_id": "beatdevil_4700",
+ "source": "beatdevil",
+ "title": "Beat the Devil",
+ "year": 1953,
+ "start": 4700.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.64,
+  "voiced": 0.507,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 0.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

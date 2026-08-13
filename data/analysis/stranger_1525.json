@@ -1,0 +1,50 @@
+{
+ "clip_id": "stranger_1525",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 1525.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.432,
+  "voiced": 0.38,
+  "score": 5.827
+ },
+ "cluster": "agreement_interest",
+ "margin": 3.0,
+ "scores": {
+  "agreement_interest": 4.5,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 1.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The listener's eyes widen and his eyebrows raise as he responds with a short follow-up question, \"Is he an expert?\", seeking more information.",
+    "modality": []
+   },
+   {
+    "type": "skepticism",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man maintains direct eye contact and actively responds to the speaker, demonstrating clear engagement. His verbal response, \"Really? Yeah,\" delivered with a slightly raised pitch and a questioning tone, directly challenges what was said. This combination of focused attention, verbal counter-commitment, and a questioning prosody strongly supports the label of skepticism.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

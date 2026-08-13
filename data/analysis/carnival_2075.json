@@ -1,0 +1,66 @@
+{
+ "clip_id": "carnival_2075",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 2075.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.833,
+  "face_size": 0.448,
+  "voiced": 0.507,
+  "score": 5.833
+ },
+ "cluster": "agreement_interest",
+ "margin": 2.0,
+ "scores": {
+  "agreement_interest": 6.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The listener nods his head affirmatively while the speaker makes their point, demonstrating clear physical assent.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The listener maintains steady eye contact and an upright posture while delivering his response, speaking with a clear and steady voice.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The listener maintains focused eye contact with the speaker and tilts his head slightly, showing active attention to the conversation.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man exhibits physical signs of tension, including a nervous smile, quick blinking, and swallowing. He also looks down and away while fidgeting with his hands, indicating an effort to manage his anxiety.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

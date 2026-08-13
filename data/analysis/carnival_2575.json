@@ -1,0 +1,38 @@
+{
+ "clip_id": "carnival_2575",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 2575.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.317,
+  "voiced": 0.585,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 0.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "neutral",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "clip_id": "groucho2_1190",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 1190.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.382,
+  "voiced": 0.557,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 3.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker begins his response with a clear 'Yeah' and a slight nod, indicating assent to the previous point.",
+    "modality": []
+   },
+   {
+    "type": "hesitation",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker pauses mid-sentence after saying 'Yeah,' uses the filler word 'uh,' and briefly looks down before completing his thought.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "clip_id": "groucho2_865",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 865.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.452,
+  "voiced": 0.58,
+  "score": 6.2
+ },
+ "cluster": "hesitation_uncertainty",
+ "margin": 1.88,
+ "scores": {
+  "agreement_interest": 4.8,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 9.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.8
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "hesitation",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker begins with the filler word 'Well' and repeatedly uses 'uh' while restarting his phrase. He also looks down and away briefly before completing his thought.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker's frequent use of filler words and repetition of phrases indicate a lack of full commitment to his statement. His gaze shifts downward and away as he struggles to articulate his point.",
+    "modality": []
+   },
+   {
+    "type": "agreement",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker nods his head and smiles warmly while the other person responds with 'Yeah, now you're talking,' indicating clear alignment with the statement.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker delivers his statement fluently without any filler words or hesitation. He maintains an upright posture and steady eye contact while speaking.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "medium",
+    "rationale": "The speaker's eyes widen and his eyebrows raise slightly as he delivers the hypothetical scenario, showing focused attention on the topic.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "low",
+    "rationale": "The speaker blinks frequently and swallows noticeably while delivering the initial part of his statement, displaying physical signs of tension.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

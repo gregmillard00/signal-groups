@@ -1,0 +1,42 @@
+{
+ "clip_id": "notld_1800",
+ "source": "notld",
+ "title": "Night of the Living Dead",
+ "year": 1968,
+ "start": 1800.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.833,
+  "face_size": 0.331,
+  "voiced": 0.502,
+  "score": 5.833
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 4.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The person maintains direct eye contact with the camera, demonstrating active engagement with the interaction. Her speech is rapid and broken, with exclamations like \"What is this man?\" and \"I got so afraid,\" which are clear verbal indicators of stress. Additionally, her nonverbal behavior, including covering her face with her hand, letting out a loud cry, and her voice becoming shaky, strongly supports the high confidence rating for stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

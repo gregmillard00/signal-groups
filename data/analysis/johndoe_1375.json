@@ -1,0 +1,42 @@
+{
+ "clip_id": "johndoe_1375",
+ "source": "johndoe",
+ "title": "Meet John Doe",
+ "year": 1941,
+ "start": 1375.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.344,
+  "voiced": 0.525,
+  "score": 6.2
+ },
+ "cluster": "confidence",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 4.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his message. His voice is clear and steady, and he speaks fluently without any filler words or hesitation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

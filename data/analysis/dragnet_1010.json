@@ -1,0 +1,50 @@
+{
+ "clip_id": "dragnet_1010",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 1010.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.505,
+  "voiced": 0.512,
+  "score": 6.2
+ },
+ "cluster": "hesitation_uncertainty",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 6.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "hesitation",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The woman explicitly states, \"Well, I'll have to think about that,\" directly indicating a delay in her response. This verbal cue is accompanied by her looking upward and away while speaking, further demonstrating hesitation. Her overall attentive posture and direct response to the question show she remains engaged in the interaction.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker explicitly states, \"I'll have to think about that,\" and \"Let's see,\" demonstrating a clear lack of commitment to her answer. This verbal hesitation is accompanied by nonverbal cues such as looking upward and away while speaking, and furrowing her brows. Despite this uncertainty, she remains engaged in the interaction by continuing to respond and maintain eye contact with the listener.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

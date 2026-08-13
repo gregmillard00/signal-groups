@@ -1,0 +1,50 @@
+{
+ "clip_id": "dragnet_1210",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 1210.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.634,
+  "voiced": 0.547,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his statement. His voice is clear and steady, and he speaks fluently without any filler words or hesitation.",
+    "modality": []
+   },
+   {
+    "type": "skepticism",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man maintains steady eye contact and actively listens to the speaker's statements. He responds with the challenging question, \"So, what's that prove?\", delivered with a questioning tone. This verbal challenge, combined with his direct gaze, clearly demonstrates a doubting stance toward the information presented.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

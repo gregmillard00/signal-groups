@@ -1,0 +1,33 @@
+{
+ "clip_id": "stranger_2275",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 2275.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.308,
+  "voiced": 0.265,
+  "score": 5.213
+ },
+ "cluster": null,
+ "margin": 0.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

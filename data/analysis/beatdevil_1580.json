@@ -1,0 +1,47 @@
+{
+ "clip_id": "beatdevil_1580",
+ "source": "beatdevil",
+ "title": "Beat the Devil",
+ "year": 1953,
+ "start": 1580.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.412,
+  "voiced": 0.32,
+  "score": 5.507
+ },
+ "cluster": "agreement_interest",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker's eyes widen and her eyebrows raise as she discusses the topic. She also smiles warmly and maintains focused eye contact, demonstrating active attention and engagement with the conversation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,82 @@
+{
+ "clip_id": "groucho2_1015",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 1015.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.413,
+  "voiced": 0.515,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": 2.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 3.0,
+  "frustration_disagreement": 1.6,
+  "skepticism_stress_confusion": 6.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confusion",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The woman furrows her brows and looks away while processing the information. She then pauses and asks a clarifying question to confirm the spelling of the name.",
+    "modality": []
+   },
+   {
+    "type": "disagreement",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "low",
+    "rationale": "She shakes her head slightly from side to side while listening and maintains a tense facial expression, indicating opposition to the topic.",
+    "modality": []
+   },
+   {
+    "type": "frustration",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "low",
+    "rationale": "Her lips press tightly together and her facial expression appears tense and annoyed as she listens to the other person.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "She blinks rapidly and swallows noticeably while looking away, displaying physical signs of tension.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "She shifts her gaze away and pauses before speaking, then asks a question to confirm the spelling, showing she is not fully sure of the information.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains an upright posture and delivers his message with a clear, steady voice. He speaks fluently without any filler words or hesitation, directly stating the correct spelling of the name.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

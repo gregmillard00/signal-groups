@@ -1,0 +1,434 @@
+/* Signal Groups - styled after NYT Connections.
+   Palette, type, spacing and interaction states follow the real game: white page,
+   Franklin-style sans, rounded grey tiles that go dark navy when picked, solved
+   groups collapsing into a colour band ordered by difficulty, pill buttons, and a
+   dark toast for transient messages. */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300..800;1,400..700&family=Playfair+Display:wght@500;600&display=swap');
+
+:root {
+  --ink: #121212;
+  --page: #ffffff;
+  --tile: #efefe6;
+  --tile-selected: #5a594e;
+  --muted: #7f7f7f;
+  --rule: #e3e3e1;
+
+  /* NYT difficulty ramp: easiest first. */
+  --d0: #f9df6d;
+  --d1: #a0c35a;
+  --d2: #b0c4ef;
+  --d3: #ba81c5;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--page);
+  color: var(--ink);
+  font-family: 'Libre Franklin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { font: inherit; cursor: pointer; }
+
+.page {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px 64px;
+}
+
+/* ---------- masthead ---------- */
+
+.masthead {
+  padding: 22px 0 14px;
+  border-bottom: 1px solid var(--ink);
+  text-align: center;
+}
+.masthead h1 {
+  margin: 0;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 34px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.masthead .kicker {
+  margin: 6px 0 0;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.instruction {
+  margin: 26px 0 14px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.blurb {
+  margin: 0 auto 22px;
+  max-width: 520px;
+  text-align: center;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #5b5b5b;
+}
+.blurb strong { color: var(--ink); font-weight: 700; }
+
+/* ---------- preview-board warning ---------- */
+
+.banner {
+  margin: 0 0 20px;
+  padding: 12px 14px;
+  border: 1px solid #e0b400;
+  background: #fff8de;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.banner strong {
+  display: block;
+  margin-bottom: 3px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+/* ---------- board ---------- */
+
+.board { position: relative; }
+
+.solved { display: grid; gap: 8px; margin-bottom: 8px; }
+
+.solved-row {
+  border-radius: 6px;
+  padding: 12px 14px;
+  text-align: center;
+}
+.solved-row.d0 { background: var(--d0); }
+.solved-row.d1 { background: var(--d1); }
+.solved-row.d2 { background: var(--d2); }
+.solved-row.d3 { background: var(--d3); }
+
+.solved-name {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+.solved-sub {
+  margin-top: 2px;
+  font-size: 13px;
+  font-weight: 500;
+  opacity: .82;
+}
+.solved-clips {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-top: 10px;
+}
+.mini {
+  background: rgba(255, 255, 255, .55);
+  border-radius: 4px;
+  padding: 7px;
+  text-align: left;
+  font-size: 11.5px;
+  line-height: 1.35;
+}
+.mini img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 5px;
+}
+.mini-title { font-weight: 700; }
+.mini-meta { color: #4a4a4a; }
+.mini-why {
+  margin-top: 4px;
+  font-style: italic;
+  color: #333;
+}
+.mini-sigs { margin-top: 5px; display: flex; flex-wrap: wrap; gap: 3px; }
+.sig {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, .12);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.sig.high { background: rgba(0, 0, 0, .34); color: #fff; }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.tile {
+  position: relative;
+  border: 0;
+  padding: 0;
+  border-radius: 6px;
+  background: var(--tile);
+  overflow: hidden;
+  text-align: left;
+  transition: background .12s ease, transform .08s ease;
+}
+.tile:active { transform: scale(.98); }
+
+/* Connections turns the whole tile dark navy when picked. Ours is mostly video, so
+   colouring only the caption strip read as ambiguous - the selected state also rings
+   the tile and dims the frame so it is unmistakable at a glance. */
+.tile.selected {
+  background: var(--tile-selected);
+  box-shadow: inset 0 0 0 4px var(--tile-selected);
+}
+.tile.selected .tile-video video { filter: brightness(.5) saturate(.8); }
+.tile.selected .tile-meta { color: #fff; }
+.tile.wrong { animation: shake .45s ease; }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20% { transform: translateX(-7px); }
+  40% { transform: translateX(7px); }
+  60% { transform: translateX(-5px); }
+  80% { transform: translateX(5px); }
+}
+
+.tile-video { position: relative; background: #000; aspect-ratio: 16 / 9; }
+.tile-video video {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: filter .12s ease;
+}
+/* Chrome paints a native "cast to device" button over the video, which showed up as
+   a stray icon on one tile. The attribute below is the real fix; this hides the
+   shadow-DOM button in builds that render it anyway. */
+video::-internal-media-controls-overlay-cast-button { display: none !important; }
+
+/* Visual only. It must never intercept clicks, or tapping the tile would play the
+   clip instead of selecting it - the opposite of how Connections behaves. */
+.scrim {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .28);
+  pointer-events: none;
+  transition: opacity .15s ease;
+}
+
+/* The one part of the video area that is clickable. */
+.play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 0;
+  padding: 0 0 0 3px;
+  background: rgba(255, 255, 255, .94);
+  color: #121212;
+  font-size: 13px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity .15s ease, transform .1s ease;
+}
+.play:hover { transform: translate(-50%, -50%) scale(1.08); }
+.tile-video.playing .scrim,
+.tile-video.playing .play { opacity: 0; }
+.tile-video.playing:hover .scrim,
+.tile-video.playing:hover .play { opacity: 1; }
+
+.tile-meta {
+  padding: 7px 9px 9px;
+  font-size: 11.5px;
+  line-height: 1.3;
+  color: #3d3d3d;
+}
+.tile-meta b {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: inherit;
+  margin-bottom: 1px;
+}
+.tile.selected .tile-meta b { color: #fff; }
+
+/* ---------- toast ---------- */
+
+.toast-slot {
+  position: relative;
+  height: 0;
+}
+.toast {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  background: var(--ink);
+  color: #fff;
+  border-radius: 4px;
+  padding: 9px 14px;
+  font-size: 13.5px;
+  font-weight: 600;
+  white-space: nowrap;
+  z-index: 5;
+  animation: pop .18s ease;
+}
+@keyframes pop { from { opacity: 0; transform: translate(-50%, 5px); } }
+
+/* ---------- footer controls ---------- */
+
+.mistakes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  margin: 22px 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.dots { display: flex; gap: 9px; }
+.dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: var(--tile-selected);
+  transition: transform .2s ease, opacity .2s ease;
+}
+.dot.spent { transform: scale(.1); opacity: 0; }
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.btn {
+  min-height: 44px;
+  padding: 0 18px;
+  border: 1px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: .01em;
+}
+.btn:hover:not(:disabled) { background: #f2f2f2; }
+.btn-primary { background: var(--ink); color: #fff; border-color: var(--ink); }
+.btn-primary:hover:not(:disabled) { background: #333; }
+.btn:disabled {
+  border-color: var(--muted);
+  color: var(--muted);
+  background: transparent;
+  cursor: not-allowed;
+}
+
+.endcard { margin-top: 26px; text-align: center; }
+.endcard h2 {
+  margin: 0 0 6px;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 26px;
+  font-weight: 600;
+}
+.endcard p { margin: 0 0 16px; font-size: 14px; color: #4a4a4a; }
+
+/* ---------- board switcher + help ---------- */
+
+.subbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin: 0 0 18px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+.subbar select {
+  font: inherit;
+  letter-spacing: 0;
+  text-transform: none;
+  padding: 5px 9px;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+}
+
+details.how {
+  margin-top: 34px;
+  border-top: 1px solid var(--rule);
+  padding-top: 14px;
+}
+details.how summary {
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+.how-body { padding-top: 10px; font-size: 13.5px; line-height: 1.55; color: #444; }
+.how-body ul { margin: 8px 0; padding-left: 20px; }
+.how-body li { margin-bottom: 5px; }
+.legend { display: grid; gap: 5px; margin-top: 8px; }
+.legend-row { display: flex; align-items: baseline; gap: 8px; font-size: 13px; }
+.legend-row b { font-weight: 700; }
+.legend-row span { color: var(--muted); }
+
+.colophon {
+  margin-top: 26px;
+  padding-top: 12px;
+  border-top: 1px solid var(--rule);
+  font-size: 11.5px;
+  color: var(--muted);
+  text-align: center;
+}
+
+@media (max-width: 560px) {
+  .page { padding: 0 10px 48px; }
+  .masthead h1 { font-size: 27px; }
+  .grid, .solved-clips { gap: 6px; }
+  .tile-meta { font-size: 10.5px; padding: 5px 6px 7px; }
+  .tile-meta b { font-size: 11px; }
+  .play i { width: 30px; height: 30px; font-size: 11px; }
+}
+
+/* ---- score: fewest mistakes wins (2026-08-09) ---------------------------- */
+/* Lives are unlimited, so the old spent-dots row was replaced by a live count. */
+.scorenum { font-size: 1.5rem; font-weight: 700; margin-right: .35rem; }
+.scorelabel { opacity: .65; font-size: .85rem; }
+
+.scoreboard { max-width: 640px; margin: 1.5rem auto 3rem; }
+.scoreboard h3 { margin: 0 0 .6rem; font-size: 1rem; }
+.sbnote { font-weight: 400; opacity: .55; font-size: .8rem; margin-left: .4rem; }
+.sbrow { display: flex; align-items: center; gap: .75rem; padding: .35rem .6rem;
+         border-radius: 8px; }
+.sbrow:nth-child(odd) { background: rgba(255,255,255,.04); }
+.sbrank { width: 1.5rem; opacity: .5; font-variant-numeric: tabular-nums; }
+.sbname { flex: 1; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.sbscore { font-weight: 700; font-variant-numeric: tabular-nums; }
+.sbempty { opacity: .55; font-size: .9rem; }
+
+.submitrow { display: flex; gap: .5rem; margin: .8rem 0 .4rem; }
+.nameinput { flex: 1; padding: .5rem .7rem; border-radius: 8px;
+             border: 1px solid rgba(255,255,255,.18); background: rgba(0,0,0,.25);
+             color: inherit; font: inherit; }
+.postmsg { font-size: .85rem; opacity: .7; min-height: 1.1em; margin-bottom: .6rem; }
+.scorecap { opacity: .65; margin-right: .1rem; }
+.scorehint { opacity: .45; font-size: .8rem; margin-left: .5rem; }

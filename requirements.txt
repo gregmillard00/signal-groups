@@ -1,0 +1,6 @@
+flask
+requests
+opencv-python-headless
+numpy
+imageio-ffmpeg
+python-dotenv

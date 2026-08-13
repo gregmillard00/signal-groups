@@ -1,0 +1,42 @@
+{
+ "clip_id": "carnival_3075",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 3075.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.833,
+  "face_size": 0.541,
+  "voiced": 0.142,
+  "score": 4.193
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact with the camera, demonstrating active engagement with the viewer. Her speech is broken and hesitant, with pauses and filler words as she struggles to articulate her thoughts. Additionally, she exhibits nonverbal signs of tension by repeatedly bringing her hands up to her face and touching her head, which strongly supports the label of stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

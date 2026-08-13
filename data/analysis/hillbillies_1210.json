@@ -1,0 +1,42 @@
+{
+ "clip_id": "hillbillies_1210",
+ "source": "hillbillies",
+ "title": "The Beverly Hillbillies: The Great Feud",
+ "year": 1963,
+ "start": 1210.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.386,
+  "voiced": 0.603,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man's speech is broken and hesitant, with frequent pauses and filler words like 'uh' and 'um.' His facial expression is tense, with wide eyes and a furrowed brow, and he swallows noticeably while speaking. These clear verbal and nonverbal indicators of anxiety demonstrate a high level of stress and active engagement with the stressful situation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

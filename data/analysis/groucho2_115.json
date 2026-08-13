@@ -1,0 +1,42 @@
+{
+ "clip_id": "groucho2_115",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 115.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.381,
+  "voiced": 0.562,
+  "score": 6.2
+ },
+ "cluster": "agreement_interest",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 4.5,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker's eyes widen and his eyebrows raise slightly as he listens to the other person's response. He also maintains steady eye contact and a focused expression, demonstrating active attention to the conversation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

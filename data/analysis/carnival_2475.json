@@ -1,0 +1,42 @@
+{
+ "clip_id": "carnival_2475",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 2475.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.517,
+  "voiced": 0.37,
+  "score": 5.773
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 4.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact with the speaker, demonstrating active engagement in the conversation. Her speech is broken up with pauses and filler words like \"uh,\" and her voice sounds slightly shaky, indicating tension. Additionally, she blinks frequently and looks upward with a worried expression, which are clear nonverbal and prosodic indicators of stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

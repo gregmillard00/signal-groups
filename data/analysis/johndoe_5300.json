@@ -1,0 +1,50 @@
+{
+ "clip_id": "johndoe_5300",
+ "source": "johndoe",
+ "title": "Meet John Doe",
+ "year": 1941,
+ "start": 5300.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.366,
+  "voiced": 0.51,
+  "score": 6.2
+ },
+ "cluster": "frustration_disagreement",
+ "margin": 2.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 1.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 3.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "frustration",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker's brows are deeply furrowed and his facial expression is tense as he speaks. His voice is sharp and elevated in pitch, and he uses harsh language, stating, \"What a scoundrel,\" which clearly indicates annoyance and frustration.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his message. His voice is clear and steady, and he speaks fluently without any filler words or hesitation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

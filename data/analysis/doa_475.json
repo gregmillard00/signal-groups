@@ -1,0 +1,50 @@
+{
+ "clip_id": "doa_475",
+ "source": "doa",
+ "title": "D.O.A.",
+ "year": 1950,
+ "start": 475.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.451,
+  "voiced": 0.39,
+  "score": 5.88
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 3.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker begins her statement with the word \"Maybe,\" explicitly signaling a lack of full commitment to her suggestion. This verbal cue is accompanied by nonverbal behaviors such as looking away and down, and a soft, hesitant tone of voice, all of which strongly support the label of uncertainty.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering her message. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

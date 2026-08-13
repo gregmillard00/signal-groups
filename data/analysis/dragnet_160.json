@@ -1,0 +1,55 @@
+{
+ "clip_id": "dragnet_160",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 160.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.667,
+  "face_size": 0.529,
+  "voiced": 0.435,
+  "score": 5.387
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": 1.5,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 3.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 4.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker exhibits nonverbal signs of tension, including a visible swallow and a slight puffing of the cheeks. Additionally, his speech is broken up with a pause and the filler word 'uh' before completing his sentence.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man explicitly uses the word 'maybe' to express doubt about his next action. This verbal hesitation is accompanied by nonverbal cues such as shifting his gaze away and furrowing his brows, indicating a lack of commitment to his statement.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "disengaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

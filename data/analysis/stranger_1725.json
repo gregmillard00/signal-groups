@@ -1,0 +1,71 @@
+{
+ "clip_id": "stranger_1725",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 1725.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.393,
+  "voiced": 0.507,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.27,
+ "scores": {
+  "agreement_interest": 3.8,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 1.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "low",
+    "rationale": "The listener nods his head affirmatively while the speaker makes his point about no German in their right mind having a taste for war.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker delivers his statement with a clear, steady voice and without any filler words or hesitation. He maintains direct eye contact and an upright posture throughout his turn.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The listener maintains steady, focused eye contact with the speaker and nods slightly while listening. His attentive gaze and slight head tilt demonstrate active engagement with the speaker's words.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker exhibits physical signs of tension, including a noticeable swallow and a slight lip lick before speaking. His speech is also broken up with a filler word, and his voice sounds slightly strained.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

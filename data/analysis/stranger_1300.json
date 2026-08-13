@@ -1,0 +1,71 @@
+{
+ "clip_id": "stranger_1300",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 1300.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.303,
+  "voiced": 0.535,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 6.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 6.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confusion",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man furrows his brows and blinks while processing the question. He then stammers and looks down, indicating a momentary breakdown in understanding.",
+    "modality": []
+   },
+   {
+    "type": "hesitation",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man delays his response to the question by starting with the filler word 'uh' and restarting his phrase. He also looks down and away before attempting to speak.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man exhibits physical signs of tension by blinking rapidly and swallowing. His speech is broken up with filler words and false starts, suggesting underlying anxiety.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man's brows furrow and he shifts his gaze downward before answering. He fills the gap with 'uh' and stammers, showing he is not immediately sure of his response.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "neutral",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

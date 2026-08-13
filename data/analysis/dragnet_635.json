@@ -1,0 +1,42 @@
+{
+ "clip_id": "dragnet_635",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 635.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.517,
+  "voiced": 0.618,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man exhibits physical signs of tension, including a furrowed brow, a tight jaw, and a noticeable swallow. His speech is also broken up with pauses and filler words, and his voice sounds slightly shaky as he recounts the events.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

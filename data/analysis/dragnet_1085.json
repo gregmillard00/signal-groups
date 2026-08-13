@@ -1,0 +1,55 @@
+{
+ "clip_id": "dragnet_1085",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 1085.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.51,
+  "voiced": 0.625,
+  "score": 6.2
+ },
+ "cluster": "confidence",
+ "margin": 2.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 1.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture throughout the clip. Her voice is clear and steady, and she delivers her message fluently without any filler words or hesitation.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man looks down with closed eyes and a tense facial expression, displaying physical signs of discomfort. His lips are pressed tightly together and he swallows noticeably, indicating underlying tension.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "disengaged",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

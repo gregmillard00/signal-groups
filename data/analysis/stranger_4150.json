@@ -1,0 +1,47 @@
+{
+ "clip_id": "stranger_4150",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 4150.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.453,
+  "voiced": 0.415,
+  "score": 6.013
+ },
+ "cluster": "confidence",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker delivers his statements with a clear, steady voice and without any filler words or hesitation. He maintains direct eye contact and an upright posture while making definitive claims without using any hedging language.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

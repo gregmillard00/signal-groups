@@ -1,0 +1,50 @@
+{
+ "clip_id": "groucho2_40",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 40.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.466,
+  "voiced": 0.458,
+  "score": 6.2
+ },
+ "cluster": "confidence",
+ "margin": 1.5,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 4.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering her message. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker's eyes widen and her eyebrows raise as she leans slightly forward. She maintains focused eye contact and smiles warmly, demonstrating active engagement with the conversation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

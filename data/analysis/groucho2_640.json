@@ -1,0 +1,58 @@
+{
+ "clip_id": "groucho2_640",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 640.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.473,
+  "voiced": 0.67,
+  "score": 6.2
+ },
+ "cluster": "agreement_interest",
+ "margin": 1.6,
+ "scores": {
+  "agreement_interest": 4.8,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker nods his head affirmatively while confirming that his parents are from Avignon, Spain.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker delivers his explanation with a clear, steady voice and maintains an upright posture while speaking.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "medium",
+    "rationale": "The speaker's eyes widen and his eyebrows raise slightly as he explains his parents' origin, showing focused attention on the topic.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "clip_id": "johndoe_5375",
+ "source": "johndoe",
+ "title": "Meet John Doe",
+ "year": 1941,
+ "start": 5375.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.352,
+  "voiced": 0.445,
+  "score": 6.173
+ },
+ "cluster": "confidence",
+ "margin": 1.5,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 4.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 3.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering his message. His voice is clear and steady, and he uses direct, assertive hand gestures without any filler words or hesitation.",
+    "modality": []
+   },
+   {
+    "type": "frustration",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker's brows are deeply furrowed and his facial expression appears tense and annoyed. His voice is sharp and elevated, and he uses forceful pointing gestures to emphasize his point.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

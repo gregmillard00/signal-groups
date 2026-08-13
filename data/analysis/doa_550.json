@@ -1,0 +1,42 @@
+{
+ "clip_id": "doa_550",
+ "source": "doa",
+ "title": "D.O.A.",
+ "year": 1950,
+ "start": 550.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.456,
+  "voiced": 0.367,
+  "score": 5.76
+ },
+ "cluster": "confidence",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 4.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering her message. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

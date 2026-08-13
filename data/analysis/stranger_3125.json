@@ -1,0 +1,47 @@
+{
+ "clip_id": "stranger_3125",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 3125.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.628,
+  "voiced": 0.25,
+  "score": 5.133
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man's speech is broken up with pauses and filler words, and his voice sounds strained and shaky. His furrowed brows and intense facial expression further indicate tension and anxiety.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

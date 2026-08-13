@@ -1,0 +1,55 @@
+{
+ "clip_id": "carnival_1750",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 1750.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.399,
+  "voiced": 0.505,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and an upright posture while delivering her statement. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker leans slightly forward and maintains focused eye contact with the other person. Her eyebrows raise slightly and her eyes widen as she speaks, demonstrating active attention to the conversation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "neutral",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

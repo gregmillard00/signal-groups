@@ -1,0 +1,58 @@
+{
+ "clip_id": "groucho1_915",
+ "source": "groucho1",
+ "title": "You Bet Your Life",
+ "year": 1960,
+ "start": 915.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.412,
+  "voiced": 0.583,
+  "score": 6.2
+ },
+ "cluster": "agreement_interest",
+ "margin": 1.6,
+ "scores": {
+  "agreement_interest": 4.8,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker nods her head affirmatively while stating the amount of money sent, indicating assent with the information being presented.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact with the camera and delivers the information with a clear, steady voice, avoiding any hedging language.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "medium",
+    "rationale": "The speaker's eyes widen and her eyebrows raise slightly as she discusses the topic, showing focused attention on the subject matter.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

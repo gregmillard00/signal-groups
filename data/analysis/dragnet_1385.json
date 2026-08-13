@@ -1,0 +1,50 @@
+{
+ "clip_id": "dragnet_1385",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 1385.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.775,
+  "voiced": 0.383,
+  "score": 5.84
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 6.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "skepticism",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker maintains steady eye contact and addresses the listener directly, demonstrating active engagement in the conversation. He expresses skepticism by repeatedly stating, \"I don't think you know,\" in a flat, challenging tone. This verbal counter-commitment is further supported by his furrowed brows and slight head shake, which visually convey his doubt about the listener's knowledge.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The person maintains direct eye contact with the camera and speaks clearly, demonstrating active engagement. His speech is broken up with pauses and repetitions, such as \"dumb Tom, poor dumb Tom,\" which are strong verbal indicators of stress. Additionally, his wide eyes and tense facial expression further support the presence of anxiety and tension.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

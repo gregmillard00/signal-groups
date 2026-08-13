@@ -1,0 +1,82 @@
+{
+ "clip_id": "stranger_1225",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 1225.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.301,
+  "voiced": 0.37,
+  "score": 5.773
+ },
+ "cluster": null,
+ "margin": 1.2,
+ "scores": {
+  "agreement_interest": 7.2,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 6.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.8
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man explicitly says 'Yeah' in response to the off-screen speaker and nods his head while speaking.",
+    "modality": []
+   },
+   {
+    "type": "hesitation",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker pauses mid-sentence, looks down, and uses the filler word 'uh' before completing his thought.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "medium",
+    "rationale": "The man maintains steady eye contact with the off-screen speaker and smiles warmly while listening and responding.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "low",
+    "rationale": "The speaker blinks rapidly and looks down with a slightly tense facial expression before delivering his response.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker shifts his gaze downward, pauses, and uses the filler word 'uh' before finishing his sentence.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man sits upright with an open posture and maintains steady eye contact with his partner. His voice is clear and steady as he delivers his response.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

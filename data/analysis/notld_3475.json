@@ -1,0 +1,33 @@
+{
+ "clip_id": "notld_3475",
+ "source": "notld",
+ "title": "Night of the Living Dead",
+ "year": 1968,
+ "start": 3475.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.833,
+  "face_size": 0.425,
+  "voiced": 0.432,
+  "score": 5.74
+ },
+ "cluster": null,
+ "margin": 0.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

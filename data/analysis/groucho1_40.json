@@ -1,0 +1,42 @@
+{
+ "clip_id": "groucho1_40",
+ "source": "groucho1",
+ "title": "You Bet Your Life",
+ "year": 1960,
+ "start": 40.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.405,
+  "voiced": 0.412,
+  "score": 6.0
+ },
+ "cluster": "agreement_interest",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The person leans slightly forward and maintains focused eye contact while listening to the speaker. She smiles warmly and raises her eyebrows in response to the question, demonstrating active attention to the topic.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

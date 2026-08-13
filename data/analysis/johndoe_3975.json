@@ -1,0 +1,47 @@
+{
+ "clip_id": "johndoe_3975",
+ "source": "johndoe",
+ "title": "Meet John Doe",
+ "year": 1941,
+ "start": 3975.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.314,
+  "voiced": 0.458,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 1.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man's speech is broken up and hesitant, as he stammers and uses the filler word \"Gosh\" before completing his thought. His tense facial expression, wide eyes, and quick head movements further indicate underlying anxiety and tension.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "engaged",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

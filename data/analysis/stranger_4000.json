@@ -1,0 +1,47 @@
+{
+ "clip_id": "stranger_4000",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 4000.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.833,
+  "face_size": 0.939,
+  "voiced": 0.398,
+  "score": 5.553
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact with the camera, demonstrating active engagement with the interaction. Her wide eyes, raised eyebrows, and parted lips clearly indicate a state of tension and anxiety. Additionally, her sharp, broken speech and the sudden, loud gasp at the end strongly support the label of stress.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "neutral",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

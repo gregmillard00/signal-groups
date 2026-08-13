@@ -1,0 +1,50 @@
+{
+ "clip_id": "beatdevil_440",
+ "source": "beatdevil",
+ "title": "Beat the Devil",
+ "year": 1953,
+ "start": 440.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.419,
+  "voiced": 0.405,
+  "score": 5.96
+ },
+ "cluster": null,
+ "margin": 1.0,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker delivers her statement fluently and without any filler words or hesitation. She maintains steady eye contact and an upright posture while speaking.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker's eyes widen and her eyebrows raise as she describes the situation. She maintains focused eye contact and leans slightly forward, demonstrating active engagement with the topic.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

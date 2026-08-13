@@ -1,0 +1,58 @@
+{
+ "clip_id": "beatdevil_800",
+ "source": "beatdevil",
+ "title": "Beat the Devil",
+ "year": 1953,
+ "start": 800.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.416,
+  "voiced": 0.388,
+  "score": 5.867
+ },
+ "cluster": null,
+ "margin": 1.33,
+ "scores": {
+  "agreement_interest": 6.0,
+  "confidence": 4.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man nods his head affirmatively while listening to the speaker's description.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The man sits upright with his shoulders back and maintains steady eye contact with the speaker. His voice is clear and steady as he responds.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man leans slightly forward and maintains focused eye contact with the speaker. His eyebrows raise slightly as he listens attentively.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

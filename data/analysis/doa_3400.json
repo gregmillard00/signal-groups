@@ -1,0 +1,76 @@
+{
+ "clip_id": "doa_3400",
+ "source": "doa",
+ "title": "D.O.A.",
+ "year": 1950,
+ "start": 3400.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.247,
+  "voiced": 0.56,
+  "score": 5.917
+ },
+ "cluster": null,
+ "margin": 1.27,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 3.0,
+  "frustration_disagreement": 3.8,
+  "skepticism_stress_confusion": 1.8
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "disagreement",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker explicitly states 'No, I never heard of him,' directly contradicting the other person's premise. This verbal rejection is accompanied by a slight head shake.",
+    "modality": []
+   },
+   {
+    "type": "frustration",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "low",
+    "rationale": "The speaker's tone is sharp and slightly exasperated as he denies knowing the person. He also looks away and presses his lips together while listening to the additional information.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "medium",
+    "rationale": "The speaker's speech is broken up by a pause and a filler word ('No, I... I never heard of him'). He also looks down and fidgets with his hands while holding a hat.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker shifts his gaze away and pauses before answering, indicating a moment of searching for the right response. His brows furrow slightly during this brief delay.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "neutral",
+    "start": 5.0,
+    "end": 10.0
+   },
+   {
+    "state": "engaged",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

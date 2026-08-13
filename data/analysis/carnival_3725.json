@@ -1,0 +1,47 @@
+{
+ "clip_id": "carnival_3725",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 3725.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.833,
+  "face_size": 0.464,
+  "voiced": 0.26,
+  "score": 4.82
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact with the camera and actively responds to the man's statement, demonstrating clear engagement. Her speech is broken and filled with anxious repetitions like \"I'll have to be left alone,\" which are strong verbal indicators of stress. Additionally, her nonverbal cues, including crying, furrowed brows, and frantically touching her neck and hair, further emphasize her high level of tension and anxiety.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "neutral",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

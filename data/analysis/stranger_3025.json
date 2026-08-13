@@ -1,0 +1,50 @@
+{
+ "clip_id": "stranger_3025",
+ "source": "stranger",
+ "title": "The Stranger",
+ "year": 1946,
+ "start": 3025.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.639,
+  "voiced": 0.552,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 4.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man maintains a tense facial expression with furrowed brows and a tight jaw while looking downward. His speech is broken and hesitant, with noticeable pauses between words, indicating an effort to maintain composure.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact with the off-screen speaker, demonstrating active engagement in the conversation. Her speech is broken and hesitant, with a shaky, high-pitched voice as she says \"I... I... I...\", which are clear verbal indicators of stress. Additionally, her wide eyes, tense facial expression, and the way she swallows and looks down at the end of the clip further emphasize her anxiety and effort to stay in control.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

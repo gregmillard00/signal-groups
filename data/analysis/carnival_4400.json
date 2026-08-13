@@ -1,0 +1,47 @@
+{
+ "clip_id": "carnival_4400",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 4400.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 0.667,
+  "face_size": 0.523,
+  "voiced": 0.675,
+  "score": 5.467
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact with the camera, demonstrating active engagement with the interaction. Her speech is broken and hesitant, starting with \"I, uh,\" which is a clear verbal indicator of stress. Additionally, her wide eyes, slightly parted lips, and tense facial expression further support the presence of anxiety and tension.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "neutral",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

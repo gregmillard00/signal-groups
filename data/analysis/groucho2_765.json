@@ -1,0 +1,52 @@
+{
+ "clip_id": "groucho2_765",
+ "source": "groucho2",
+ "title": "You Bet Your Life",
+ "year": 1959,
+ "start": 765.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.446,
+  "voiced": 0.575,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 4.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker begins with a filler word and a slight pause, then looks down and away while reading from his notes. His voice is relatively quiet and steady, and he swallows noticeably before continuing his sentence.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "disengaged",
+    "start": 5.0,
+    "end": 10.0
+   },
+   {
+    "state": "engaged",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

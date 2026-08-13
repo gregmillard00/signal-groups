@@ -1,0 +1,55 @@
+{
+ "clip_id": "carnival_3550",
+ "source": "carnival",
+ "title": "Carnival of Souls",
+ "year": 1962,
+ "start": 3550.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.498,
+  "voiced": 0.405,
+  "score": 5.96
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": 2.0,
+ "scores": {
+  "agreement_interest": 1.5,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The man exhibits clear signs of tension by bringing his hands up to cover his face and ears. He also swallows noticeably and looks down, indicating an effort to cope with or block out his surroundings.",
+    "modality": []
+   },
+   {
+    "type": "agreement",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains direct eye contact and actively responds to the conversation, demonstrating clear engagement. She explicitly states her alignment by saying, \"I like being with you really, I do,\" which serves as a direct verbal confirmation. Additionally, her warm smile and slight head nod further emphasize her assent and positive stance.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "disengaged",
+    "start": 0.0,
+    "end": 5.0
+   },
+   {
+    "state": "engaged",
+    "start": 5.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

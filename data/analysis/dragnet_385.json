@@ -1,0 +1,58 @@
+{
+ "clip_id": "dragnet_385",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 385.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.546,
+  "voiced": 0.57,
+  "score": 6.2
+ },
+ "cluster": "skepticism_stress_confusion",
+ "margin": 3.0,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 1.5,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 4.5
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker's speech is broken up with filler words and pauses, and his voice sounds slightly shaky. He also blinks frequently and looks away while delivering his response.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker delivers his account fluently and without any filler words or hesitation. He maintains steady eye contact and an upright posture while speaking.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 10.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker's voice is slightly shaky and his eyes widen in alarm as he describes locking the door. He also blinks frequently and his facial expression appears tense.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

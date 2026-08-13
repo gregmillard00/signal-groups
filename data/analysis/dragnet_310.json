@@ -1,0 +1,90 @@
+{
+ "clip_id": "dragnet_310",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 310.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.527,
+  "voiced": 0.608,
+  "score": 6.2
+ },
+ "cluster": null,
+ "margin": 1.2,
+ "scores": {
+  "agreement_interest": 3.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 7.5,
+  "frustration_disagreement": 2.0,
+  "skepticism_stress_confusion": 9.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "confusion",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The listener furrows his brows and asks the clarifying question, \"What do you mean?\" in response to the speaker's statement about not being \"regular.\"",
+    "modality": []
+   },
+   {
+    "type": "disagreement",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "low",
+    "rationale": "The speaker shakes his head slightly while stating \"Not regular,\" verbally rejecting the interviewer's assumption that he is employed.",
+    "modality": []
+   },
+   {
+    "type": "hesitation",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The speaker pauses and uses the filler phrase \"Well\" before answering the question about his employment status.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker blinks frequently, swallows, and his speech is broken up with pauses and filler words.",
+    "modality": []
+   },
+   {
+    "type": "uncertainty",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker shifts his gaze away and uses the filler \"Well\" before answering, indicating a moment of searching for the right words.",
+    "modality": []
+   },
+   {
+    "type": "frustration",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "low",
+    "rationale": "The speaker's voice becomes sharper and louder as he emphasizes his point, and he exhales heavily at the end of his sentence.",
+    "modality": []
+   },
+   {
+    "type": "interest",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The listener maintains steady eye contact and asks a direct follow-up question to gather more information.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

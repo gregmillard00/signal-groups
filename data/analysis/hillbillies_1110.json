@@ -1,0 +1,63 @@
+{
+ "clip_id": "hillbillies_1110",
+ "source": "hillbillies",
+ "title": "The Beverly Hillbillies: The Great Feud",
+ "year": 1963,
+ "start": 1110.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.353,
+  "voiced": 0.555,
+  "score": 6.2
+ },
+ "cluster": "agreement_interest",
+ "margin": 1.5,
+ "scores": {
+  "agreement_interest": 4.5,
+  "confidence": 3.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 0.0,
+  "skepticism_stress_confusion": 3.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "agreement",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The second woman explicitly says \"Yes\" in direct response to the first woman's question. She also nods her head slightly while confirming the statement, demonstrating clear assent.",
+    "modality": []
+   },
+   {
+    "type": "stress",
+    "start": 0.0,
+    "end": 5.0,
+    "probability": "high",
+    "rationale": "The first woman's voice is shaky and her speech is broken up as she stammers, \"Then he said that was...\" She also closes her eyes tightly and looks down, displaying physical signs of tension.",
+    "modality": []
+   },
+   {
+    "type": "confidence",
+    "start": 5.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The woman maintains steady eye contact and an upright posture while delivering her response. Her voice is clear and steady, and she speaks fluently without any filler words or hesitation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   },
+   {
+    "state": "neutral",
+    "start": 10.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

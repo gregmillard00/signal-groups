@@ -1,0 +1,14 @@
+.env
+raw/
+clips/
+static/clips/
+__pycache__/
+*.log
+.account.json
+shots/
+.session.json
+.public_url
+AGENTS.md
+server.py.bak
+static/game.js.bak
+data/scores.json

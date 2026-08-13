@@ -1,0 +1,42 @@
+{
+ "clip_id": "dragnet_810",
+ "source": "dragnet",
+ "title": "Dragnet: The Big False Make",
+ "year": 1954,
+ "start": 810.0,
+ "duration": 10.0,
+ "prefilter": {
+  "face_frac": 1.0,
+  "face_size": 0.575,
+  "voiced": 0.657,
+  "score": 6.2
+ },
+ "cluster": "frustration_disagreement",
+ "margin": null,
+ "scores": {
+  "agreement_interest": 0.0,
+  "confidence": 0.0,
+  "hesitation_uncertainty": 0.0,
+  "frustration_disagreement": 4.5,
+  "skepticism_stress_confusion": 0.0
+ },
+ "result": {
+  "signals": [
+   {
+    "type": "frustration",
+    "start": 0.0,
+    "end": 10.0,
+    "probability": "high",
+    "rationale": "The speaker maintains direct eye contact and speaks clearly, demonstrating active engagement with the listener. His frustration is evident through his verbal complaint about being \"sick of it\" and his sharp, elevated tone of voice. Additionally, his wide eyes and tense facial expression further emphasize his annoyance with the situation.",
+    "modality": []
+   }
+  ],
+  "engagement_state": [
+   {
+    "state": "engaged",
+    "start": 0.0,
+    "end": 10.0
+   }
+  ]
+ }
+}

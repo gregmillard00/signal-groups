@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Signal Groups</title>
+<link rel="icon" href="{{ url_for('static', filename='favicon.svg') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <h1>Signal Groups</h1>
+    <p class="kicker">Powered by inter1</p>
+  </header>
+
+  <div id="banner"></div>
+
+  <p class="instruction">Create three groups of three!</p>
+
+  <p class="blurb">
+    Every clip was read by <strong>inter1</strong>, a model that detects social signals
+    from face, voice and words together. Play them with sound, then group the three that
+    share a signal.
+  </p>
+
+  <div class="subbar">
+    <label for="boardPick">Puzzle</label>
+    <select id="boardPick"></select>
+  </div>
+
+  <div class="board">
+    <div class="solved" id="solved"></div>
+    <div class="grid" id="grid"></div>
+    <div class="toast-slot"><div id="toast"></div></div>
+  </div>
+
+  <!-- Lives are unlimited, so nothing is "remaining". The number IS the score. -->
+  <div class="mistakes">
+    <span class="scorecap">Score</span>
+    <span class="dots" id="dots"></span>
+    <span class="scorehint">fewer is better</span>
+  </div>
+
+  <div class="controls">
+    <button class="btn" id="shuffle">Shuffle</button>
+    <button class="btn" id="clear" disabled>Deselect all</button>
+    <button class="btn btn-primary" id="submit" disabled>Submit</button>
+  </div>
+
+  <div id="endcard"></div>
+
+  <!-- Shared across every player, polled every 10s so it is live without a reload. -->
+  <div id="scoreboard" class="scoreboard"></div>
+
+  <details class="how">
+    <summary>How to play</summary>
+    <div class="how-body">
+      <ul>
+        <li>Press play on a clip to watch it. <strong>Sound matters</strong> - inter1 reads
+            tone and hesitation in the voice as much as the face.</li>
+        <li>Tap three clips you think share a signal, then hit Submit.</li>
+        <li>Unlimited guesses. Your score is how many you get wrong, so fewer is better.</li>
+        <li>Solve a group and you get inter1's actual reasoning for every clip in it.</li>
+      </ul>
+      <p style="margin:12px 0 4px"><strong>The five groups clips are drawn from:</strong></p>
+      <div class="legend" id="legend"></div>
+      <p style="margin-top:12px">
+        Each clip is about 10 seconds, from public-domain film and television on the
+        Internet Archive. Every puzzle uses three of the five groups.
+      </p>
+    </div>
+  </details>
+
+  <p class="colophon">
+    Clips are public domain via archive.org &middot; signal labels by inter1 (interhuman.ai)
+  </p>
+</div>
+
+<script src="{{ url_for('static', filename='game.js') }}"></script>
+</body>
+</html>
