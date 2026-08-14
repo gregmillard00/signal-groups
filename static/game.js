@@ -254,23 +254,51 @@ async function finish(won) {
   loadScoreboard();
 }
 
+/* Which puzzle a board is, in the same 1-based numbering the picker shows. */
+function boardLabel(id) {
+  const boards = (state.deck && state.deck.boards) || [];
+  const i = boards.findIndex((b) => b.id === id);
+  return i < 0 ? id : String(i + 1);
+}
+
+/* Reference line, not a player. Rendered only when the server has a proven baseline
+   for THIS board's shape - blind_optimal is null for any shape we have not solved,
+   and then nothing is shown rather than a number from a different game. */
+function baselineMarkup(board) {
+  const n = board && board.blind_optimal;
+  if (n == null) return '';
+  return `<div class="sbbaseline">
+      <span class="sbbasename">Blind optimal play
+        <span class="sbnote">benchmark, not a player</span></span>
+      <span class="sbbasenum">${escapeHtml(n)}</span>
+    </div>
+    <div class="sbbasenote">Worst case for a player who cannot see the clips at all and
+      guesses optimally. Beat this and you are reading the clips.</div>`;
+}
+
 async function loadScoreboard() {
+  const box = el('scoreboard');
+  if (!box) return;
+  // Scores are only comparable within one puzzle, so the leaderboard is per board.
+  // Before a board is loaded there is nothing meaningful to rank.
+  const board = state.board;
+  if (!board) return;
   try {
-    const data = await api('/api/scoreboard');
-    const box = el('scoreboard');
-    if (!box) return;
-    if (!data.scores.length) {
-      box.innerHTML = '<div class="sbempty">No scores yet. Be first.</div>';
-      return;
-    }
-    box.innerHTML =
-      '<h3>Scoreboard <span class="sbnote">fewest mistakes wins</span></h3>' +
-      data.scores.slice(0, 10).map((r, i) => `
+    const data = await api(`/api/scoreboard?board_id=${encodeURIComponent(board.id)}`);
+    // A board switch (or a 10s poll) can land after this request went out; dropping a
+    // stale response stops puzzle 1's scores flashing up under puzzle 2's heading.
+    if (!state.board || state.board.id !== board.id) return;
+    const head = `<h3>Scoreboard <span class="sbnote">puzzle ${escapeHtml(boardLabel(board.id))}
+        &middot; fewest mistakes wins</span></h3>`;
+    const rows = data.scores.length
+      ? data.scores.slice(0, 10).map((r, i) => `
         <div class="sbrow">
           <span class="sbrank">${i + 1}</span>
           <span class="sbname">${escapeHtml(r.name)}</span>
           <span class="sbscore">${r.mistakes}</span>
-        </div>`).join('');
+        </div>`).join('')
+      : '<div class="sbempty">No scores yet on this puzzle. Be first.</div>';
+    box.innerHTML = head + rows + baselineMarkup(board);
   } catch (e) { /* scoreboard is non-critical; never block play on it */ }
 }
 
@@ -298,6 +326,9 @@ async function loadBoard(id) {
   state.tiles = state.board.tiles;
   renderDots();
   renderGrid();
+  // On page load and on every puzzle switch - the leaderboard belongs to the board
+  // being played, so it must not wait until someone finishes a run to appear.
+  loadScoreboard();
 }
 
 async function boot() {

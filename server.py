@@ -20,6 +20,26 @@ DECK_PATH = os.path.join(HERE, "data", "deck.json")
 # show a scale; nothing enforces it any more.
 MAX_MISTAKES = 0  # 0 = unlimited
 
+# Blind-play baseline, keyed on the board's actual shape (n_groups, clips_per_group).
+# The value is the worst case number of mistakes a player who cannot see the clips at
+# all, but plays optimally, is guaranteed to finish within. For 3 groups x 3 clips it
+# is 9: exhaustive minimax over all 280 partitions of 9 items into 3 unordered groups
+# of 3, under this game's exact ternary feedback (correct / one-away / nothing), proved
+# 8 insufficient and 9 sufficient.
+#
+# Deliberately a lookup and not a constant: a shape that has not been solved returns
+# None, and callers must render nothing rather than reuse a number computed for a
+# different game. A future 4x4 board must not silently inherit 9.
+BLIND_OPTIMAL = {
+    (3, 3): 9,
+}
+
+
+def blind_optimal(n_groups, per_group):
+    """Worst case mistakes for optimal blind play on this shape, or None if unknown."""
+    return BLIND_OPTIMAL.get((n_groups, per_group))
+
+
 app = Flask(__name__)
 
 
@@ -56,12 +76,16 @@ def public_board(board):
             idx[i], idx[j] = idx[j], idx[i]
         order = idx
     tiles = [tiles[i] for i in order]
+    group_count = len(board["groups"])
+    per_group = len(board["groups"][0]["clips"]) if board["groups"] else 0
     return {
         "id": board["id"],
         "tiles": tiles,
-        "group_count": len(board["groups"]),
-        "per_group": len(board["groups"][0]["clips"]) if board["groups"] else 0,
+        "group_count": group_count,
+        "per_group": per_group,
         "max_mistakes": MAX_MISTAKES,
+        # None whenever this shape has no proven baseline; the client renders nothing.
+        "blind_optimal": blind_optimal(group_count, per_group),
     }
 
 
