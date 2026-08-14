@@ -437,13 +437,6 @@ details.how summary {
 
 /* Blind-play baseline. Deliberately not styled as an .sbrow: it is a reference mark
    for the puzzle, not an entry someone earned, so it sits apart from the ranking. */
-.sbbaseline { display: flex; align-items: baseline; gap: .75rem;
-              margin-top: .5rem; padding: .35rem .6rem;
-              border-top: 1px dashed rgba(255,255,255,.18); }
-.sbbasename { flex: 1; opacity: .7; }
-.sbbasenum { font-weight: 700; opacity: .7; font-variant-numeric: tabular-nums; }
-.sbbasenote { padding: 0 .6rem; font-size: .78rem; opacity: .45; }
-
 .submitrow { display: flex; gap: .5rem; margin: .8rem 0 .4rem; }
 .nameinput { flex: 1; padding: .5rem .7rem; border-radius: 8px;
              border: 1px solid rgba(255,255,255,.18); background: rgba(0,0,0,.25);

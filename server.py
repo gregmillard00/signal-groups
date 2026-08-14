@@ -30,14 +30,7 @@ MAX_MISTAKES = 0  # 0 = unlimited
 # Deliberately a lookup and not a constant: a shape that has not been solved returns
 # None, and callers must render nothing rather than reuse a number computed for a
 # different game. A future 4x4 board must not silently inherit 9.
-BLIND_OPTIMAL = {
-    (3, 3): 9,
-}
 
-
-def blind_optimal(n_groups, per_group):
-    """Worst case mistakes for optimal blind play on this shape, or None if unknown."""
-    return BLIND_OPTIMAL.get((n_groups, per_group))
 
 
 app = Flask(__name__)
@@ -85,7 +78,6 @@ def public_board(board):
         "per_group": per_group,
         "max_mistakes": MAX_MISTAKES,
         # None whenever this shape has no proven baseline; the client renders nothing.
-        "blind_optimal": blind_optimal(group_count, per_group),
     }
 
 

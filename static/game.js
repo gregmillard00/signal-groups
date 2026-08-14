@@ -261,21 +261,6 @@ function boardLabel(id) {
   return i < 0 ? id : String(i + 1);
 }
 
-/* Reference line, not a player. Rendered only when the server has a proven baseline
-   for THIS board's shape - blind_optimal is null for any shape we have not solved,
-   and then nothing is shown rather than a number from a different game. */
-function baselineMarkup(board) {
-  const n = board && board.blind_optimal;
-  if (n == null) return '';
-  return `<div class="sbbaseline">
-      <span class="sbbasename">Blind optimal play
-        <span class="sbnote">benchmark, not a player</span></span>
-      <span class="sbbasenum">${escapeHtml(n)}</span>
-    </div>
-    <div class="sbbasenote">Worst case for a player who cannot see the clips at all and
-      guesses optimally. Beat this and you are reading the clips.</div>`;
-}
-
 async function loadScoreboard() {
   const box = el('scoreboard');
   if (!box) return;
@@ -298,7 +283,7 @@ async function loadScoreboard() {
           <span class="sbscore">${r.mistakes}</span>
         </div>`).join('')
       : '<div class="sbempty">No scores yet on this puzzle. Be first.</div>';
-    box.innerHTML = head + rows + baselineMarkup(board);
+    box.innerHTML = head + rows;
   } catch (e) { /* scoreboard is non-critical; never block play on it */ }
 }
 
