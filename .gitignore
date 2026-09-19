@@ -12,3 +12,4 @@ AGENTS.md
 server.py.bak
 static/game.js.bak
 data/scores.json
+*.pid
